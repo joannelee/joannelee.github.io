@@ -1,0 +1,21 @@
+- school:
+    en: KAIST
+    ko: KAIST (한국과학기술원)
+  url:
+    en: //kaist.ac.kr/en
+    ko: //kaist.ac.kr
+  degree:
+    en: B.S., Industrial Design
+    ko: 산업디자인학과, 학사
+  year: 2008-2012
+
+- school:
+    en: Gwangju Science High School
+    ko: 광주과학고등학교
+  url:
+    en: //gsa.gen.hs.kr/english
+    ko: //gsa.hs.kr
+  degree:
+    en: Physics
+    ko: 물리
+  year: 2005-2008

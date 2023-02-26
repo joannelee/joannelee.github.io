@@ -1,0 +1,53 @@
+<div class="talk2me-carousel">
+  <img class="mask" src="/assets/images/works/{{ page.ref }}/mobile-mask.png" srcset="/assets/images/works/{{ page.ref }}/mobile-mask@2x.png 2x">
+  <div class="mask-bg"></div>
+  <div class="screens slider owl-carousel owl-theme">
+    <div>
+      <img src="/assets/images/works/{{ page.ref }}/app-1.jpg" srcset="/assets/images/works/{{ page.ref }}/app-1@2x.jpg 2x"
+      {% if page.lang == 'ko' %}
+        title="두 시간에 한 번씩 새로운 질문이 도착합니다."
+      {% else %}
+        title="Question changes by every 2 hours."
+      {% endif %}
+      >
+    </div>
+    <div>
+      <img src="/assets/images/works/{{ page.ref }}/app-2.jpg" srcset="/assets/images/works/{{ page.ref }}/app-2@2x.jpg 2x"
+      {% if page.lang == 'ko' %}
+        title="각 질문당 최대 200자까지 답변을 작성할 수 있습니다."
+      {% else %}
+        title="Users can answer each question within 200 characters."
+      {% endif %}
+      >
+    </div>
+    <div>
+      <img src="/assets/images/works/{{ page.ref }}/app-3.jpg" srcset="/assets/images/works/{{ page.ref }}/app-3@2x.jpg 2x" 
+      {% if page.lang == 'ko' %}
+        title="제출한 답변은 선생님이 직접 첨삭합니다."
+      {% else %}
+        title="Answers are corrected by tutors."
+      {% endif %}
+      >
+    </div>
+    <div>
+      <img src="/assets/images/works/{{ page.ref }}/app-4.jpg" srcset="/assets/images/works/{{ page.ref }}/app-4@2x.jpg 2x" 
+      {% if page.lang == 'ko' %}
+        title="히스토리 탭에서 지난 답변들을 모아보고 복습할 수 있습니다."
+      {% else %}
+        title="All answers can be reviewed in the history tab."
+      {% endif %}
+      >
+    </div>
+  </div>
+  <script>
+    $(document).ready(function(){
+      $(".slider").owlCarousel({
+        autoWidth: true,
+        center: true,
+        margin: 90,
+        loop: true,
+        dots: true
+      });
+    });
+  </script>
+</div>

@@ -1,0 +1,570 @@
+* {
+  &,
+  &:before,
+  &:after {
+    box-sizing: border-box;
+  }
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: $base-background-color;
+}
+
+@mixin paragraph {
+  @include for-size(tablet-landscape-up) {
+    width: 80%;
+  }
+}
+
+@mixin divider {
+  border-top: $base-border;
+}
+
+@mixin grid {
+  display: flex;
+  display: -ms-flexbox;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+
+@mixin no-grid($size) {
+  @include for-size($size) {
+    display: block;
+  }
+}
+
+@mixin full-width($size) {
+  @include for-size($size) {
+    width: 100%;
+  }
+}
+
+@mixin opacity-change {
+  @include transition(opacity $base-duration $base-timing);
+}
+
+.container {
+  width: 70rem;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.site-header {
+  margin-top: $base-spacing;
+  margin-bottom: 20vh;
+  @include for-size(mobile-only) {
+    margin-bottom: 15vh;
+    @media (min-height: 700px) {
+      margin-bottom: 10vh;
+    }
+  }
+  @include for-size(tablet-landscape-up) {
+    margin-top: $base-spacing * 4;
+  }
+}
+
+.logo {
+  width: 160px;
+  height: 24px;
+  @include for-size(mobile-only) {
+    width: 55px;
+    height: 22px;
+  }
+}
+
+.nav {
+  @include grid;
+  @include for-size(mobile-only) {
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+  a {
+    @include opacity-change;
+    &:hover,
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}
+
+.navbar {
+  float: right;
+  margin: 0;
+  position: relative;
+  padding: 0;
+  pointer-events: all;
+  cursor: pointer;
+  @include for-size(mobile-only) {
+    margin-top: -$base-spacing * 0.125;
+  }
+  li {
+    display: inline-block;
+    padding-left: $base-spacing * 5;
+    @include for-size(tablet-only) {
+      padding-left: $base-spacing * 3;
+    }
+    @include for-size(mobile-only) {
+      line-height: 1;
+      margin-bottom: $base-spacing * 0.25;
+      display: list-item;
+      padding: 0;
+    }
+  }
+  .active {
+    text-decoration: underline;
+  }
+}
+
+.about-intro,
+.profile-intro,
+.works-intro,
+.project-intro {
+  display: table;
+}
+
+.about-intro {
+  @include for-size(laptop-up) {
+    width: 48.5%;
+    float: left;
+  }
+}
+
+.about-contact {
+  display: none;
+  @include for-size(tablet-portrait-up) {
+    display: block;
+  }
+  @include for-size(tablet-only) {
+    padding-top: $base-spacing;
+    padding-bottom: $base-spacing * 2;
+  }
+  @include for-size(laptop-up) {
+    width: 40.5%;
+    float: right;
+  }
+  p {
+    color: rgba($primary-color, 0.66);
+    margin: 0;
+  }
+  a {
+    margin-left: $base-spacing * 0.25;
+    color: $medium-gray-color;
+  }
+}
+
+.profile-intro-text {
+  @include for-size(laptop-up) {
+    width: 48.5%;
+    float: left;
+  }
+}
+
+.profile-intro-image {
+  @include for-size(laptop-up) {
+    width: 42%;
+    float: right;
+  }
+}
+
+.profile-list {
+  @include divider;
+  @include grid;
+  @include for-size(tablet-portrait-down) {
+    display: block;
+  }
+  padding-top: $base-spacing;
+  margin-top: $base-spacing;
+  h3 {
+    margin-bottom: $base-spacing;
+  }
+  ul {
+    width: 80%;
+    @include full-width(tablet-portrait-down);
+  }
+  li {
+    @include grid;
+    @include no-grid(mobile-only);
+    margin-bottom: $base-spacing * 0.33;
+    span {
+      &:first-of-type {
+        width: 47.5%;
+        padding-right: 3%;
+        @include for-size(mobile-only) {
+          width: 100%;
+          display: block;
+        }
+      }
+      &:nth-of-type(2) {
+        color: $medium-gray-color;
+        width: 34.5%;
+        padding-right: 3%;
+        @include for-size(mobile-only) {
+          width: auto;
+          padding: 0;
+          &:after {
+            content: ",";
+          }
+        }
+      }
+      &:nth-of-type(3) {
+        color: $medium-gray-color;
+        width: 18%;
+        @include for-size(mobile-only) {
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+.works-intro p {
+  @include paragraph;
+}
+
+.works-list {
+  clear: both;
+  padding-top: $base-spacing * 0.5;
+  ul {
+    @include grid;
+    @include no-grid(mobile-only);
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    li {
+      width: 48.5%;
+      @include full-width(mobile-only);
+      margin-bottom: $base-spacing * 0.5;
+      @include for-size(mobile-only) {
+        margin-bottom: $base-spacing * 1.5;
+      }
+    }
+    a {
+      &:hover,
+      &:active {
+        text-decoration: none;
+      }
+    }
+    img {
+      will-change: opacity;
+      @include opacity-change;
+      &:hover {
+        opacity: 0.85;
+      }
+    }
+    h3 {
+      margin: $base-spacing * 0.125 0;
+    }
+  }
+}
+
+.project-intro-description {
+  @include grid;
+  @include no-grid(tablet-portrait-down);
+  margin-bottom: $base-spacing * 0.5;
+  div {
+    width: 60%;
+    @include full-width(tablet-portrait-down);
+  }
+  ul {
+    width: 33%;
+    padding-bottom: $base-spacing;
+    @include full-width(tablet-portrait-down);
+    li {
+      @include grid;
+      span {
+        &:first-child {
+          width: 27%;
+          color: $medium-gray-color;
+        }
+        &:nth-child(2) {
+          width: 73%;
+        }
+      }
+    }
+  }
+}
+
+.project-content {
+  @include for-size(tablet-portrait-down) {
+    margin-bottom: -$base-spacing;
+  }
+  h2 {
+    margin-top: $base-spacing * 1.5;
+    margin-bottom: $base-spacing * 0.5;
+    &:first-of-type {
+      margin-top: $base-spacing;
+    }
+  }
+  p {
+    @include paragraph;
+    margin-top: $base-spacing * 0.5;
+  }
+  img {
+    margin-bottom: $base-spacing * 0.5;
+    @include for-size(mobile-only) {
+      margin-bottom: 0;
+    }
+  }
+  .show-on-mobile {
+    display: none;
+    @include for-size(mobile-only) {
+      display: block;
+    }
+  }
+  .hide-on-mobile {
+    display: block;
+    @include for-size(mobile-only) {
+      display: none;
+    }
+  }
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  iframe,
+  object,
+  embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.site-footer {
+  @include grid;
+  @include divider;
+  padding-top: $base-spacing * 0.66;
+  padding-bottom: $base-spacing;
+  margin-top: $base-spacing * 4;
+  @include for-size(tablet-portrait-down) {
+    padding-bottom: 0;
+    margin-top: $base-spacing * 3;
+  }
+  a {
+    color: $medium-gray-color;
+  }
+}
+
+////////////////////////////
+/// Page Specific Styles ///
+////////////////////////////
+
+/* Line Kids' Phone */
+.line-carousel {
+  height: 520px;
+  overflow: hidden;
+  float: none;
+  padding: 48px 0;
+  margin-bottom: $base-spacing * 0.5;
+  @include for-size(mobile-only) {
+    margin-bottom: 0;
+  }
+  background-image: url(../images/works/line-kids-phone/bg.jpg);
+  @include for-retina {
+    background-image: url(../images/works/line-kids-phone/bg@2x.jpg);
+    background-size: 1120px 520px;
+  }
+  .mask {
+    position: relative;
+    float: none;
+    margin: 0 auto;
+    width: 300px;
+    display: block;
+    z-index: 2;
+    pointer-events: none;
+  }
+  .mask-bg {
+    position: relative;
+    float: none;
+    margin: 0 auto;
+    top: -310px;
+    @include for-size(iphoneSE) {
+      top: -300px;
+    }
+    width: 200px;
+    height: 200px;
+    background: #1c1c1c;
+  }
+  .screens {
+    position: relative;
+    top: -510px;
+    z-index: 1;
+    img {
+      width: 200px !important;
+      @include for-size(iphoneSE) {
+        width: 192px !important;
+        margin: 12px 4px;
+      }
+    }
+  }
+}
+#line-device-flow-mobile {
+  margin: $base-spacing * 0.33 0;
+}
+
+/* Talk2Me */
+@mixin set-margin {
+  margin: $base-spacing * 1.5 0;
+  @include for-size(mobile-only) {
+    margin: $base-spacing * 0.5 0;
+  }
+}
+.talk2me-chart {
+  @include set-margin;
+  height: 320px;
+  width: 100%;
+  @include for-size(mobile-only) {
+    padding-bottom: $base-spacing;
+  }
+}
+.talk2me-carousel {
+  @include set-margin;
+  height: 810px;
+  @include for-size(mobile-only) {
+    height: 680px;
+  }
+  @include for-size(iphoneSE) {
+    height: 610px;
+  }
+  overflow: hidden;
+  float: none;
+  padding: 12px 0;
+  .mask {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
+    @include for-size(mobile-only) {
+      width: 320px;
+    }
+  }
+  .mask-bg {
+    position: relative;
+    float: none;
+    margin: 0 auto;
+    top: -640px;
+    width: 290px;
+    height: 504px;
+    background: #929292;
+    @include for-size(mobile-only) {
+      top: -532px;
+      width: 240px;
+      height: 420px;
+    }
+    @include for-size(iphoneSE) {
+      top: -500px;
+    }
+  }
+  .screens {
+    position: relative;
+    top: -1144px;
+    z-index: 1;
+    img {
+      width: 283px;
+      @include for-size(mobile-only) {
+        width: 234px !important;
+      }
+      @include for-size(iphoneSE) {
+        width: 213px !important;
+        margin: 52px 10.5px;
+      }
+    }
+    @include for-size(mobile-only) {
+      top: -950px;
+    }
+  }
+}
+.talk2me-features {
+  @include set-margin;
+  display: table;
+  .feature {
+    display: table-cell;
+    float: left;
+    position: relative;
+    width: 100%;
+    padding: $base-spacing * 1.5;
+    color: $white-color;
+    @include for-size(tablet-landscape-up) {
+      height: $base-spacing * 15;
+      margin-left: 3%;
+      width: 31.3333333333%;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+    p {
+      width: 100%;
+    }
+    &:first-of-type {
+      background-color: #3d515c;
+    }
+    &:nth-of-type(2) {
+      background-color: #efad49;
+    }
+    &:nth-of-type(3) {
+      background-color: #45b29d;
+    }
+    .label,
+    .title {
+      font-size: 1.25rem;
+      font-weight: 500;
+    }
+    .label {
+      border: 2px solid $white-color;
+      display: block;
+      width: $base-spacing * 1.33;
+      height: $base-spacing * 1.33;
+      border-radius: $base-spacing * 0.67;
+      text-align: center;
+      line-height: $base-spacing * 1.1;
+      color: $white-color;
+      margin-bottom: $base-spacing;
+      @include for-size(tablet-only) {
+        display: none;
+      }
+    }
+  }
+}
+
+/* Looxid Labs CI */
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.looxid-labs-logo {
+  position: relative;
+  img {
+    &:first-of-type {
+      position: absolute;
+      left: 0;
+    }
+    &:last-of-type {
+      animation-name: fadeInOut;
+      animation-timing-function: $base-timing;
+      animation-iteration-count: infinite;
+      animation-duration: $base-duration * 10;
+      animation-direction: alternate;
+    }
+  }
+}

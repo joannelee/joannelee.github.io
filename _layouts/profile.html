@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+{% assign lang = page.lang %}
+<section class="profile-intro">
+    <h2>Profile</h2>
+    <div class="profile-intro-text">
+        {{ content }}
+    </div>
+    <div class="profile-intro-image">
+        <img src="/assets/images/{{ page.ref }}.jpg" srcset="/assets/images/{{ page.ref }}@2x.jpg 2x">
+    </div>
+</section>
+<section class="profile-list">
+    <h3>Experience</h3>
+    <ul>
+        {% for experience in site.data.experience %}
+        <li>
+            <span><a href="{{ experience.url }}" target="_blank">{{ experience.company[lang] }}</a></span>
+            <span>{{ experience.title[lang] }}</span>
+            <span>{{ experience.year }}</span>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
+<section class="profile-list">
+    <h3>Education</h3>
+    <ul>
+        {% for education in site.data.education %}
+        <li>
+            <span><a href="{{ education.url[lang] }}" target="_blank">{{ education.school[lang] }}</a></span>
+            <span>{{ education.degree[lang] }}</span>
+            <span>{{ education.year }}</span>
+        </li>
+        {% endfor %}
+    </ul>
+</section>

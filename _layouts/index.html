@@ -1,22 +1,18 @@
 ---
 layout: default
-title: Home
-lang: en
-js: [ multilingual, fontawesome.min, solid.min, brands.min ]
 ---
+
+{% assign lang = page.lang %}
 <section class="about-intro">
   <h2>About</h2>
-  <p>Joanne J Lee is a UX designer based in Seoul, Korea. Through having experience as both an in-house designer and an agency designer, she's been practising design in various fields for large corporates and startups.</p>
-  <p>To deliver a delightful and integrated experience, her scope of design ranges from user interface and branding to printed matter and video directing. She has worked on multiple projects in the healthcare industry lately.</p>
+  {{ content }}
 </section>
-
 <section class="about-contact">
   <h2>Get in touch</h2>
   <p><i class="fa-solid fa-envelope"></i> <a href="mailto:joanne.j.leee@gmail.com">joanne.j.leee@gmail.com</a></p>
   <p><i class="fa-brands fa-linkedin-in"></i> <a href="https://linkedin.com/in/joanneleee" target="_blank">linkedin.com/in/joanneleee</a></p>
   <p><i class="fa-brands fa-github"></i> <a href="https://github.com/joannelee" target="_blank">@joannelee</a></p>
 </section>
-
 <section class="works-list">
   <h2>Featured works</h2>
   <ul>
@@ -24,10 +20,10 @@ js: [ multilingual, fontawesome.min, solid.min, brands.min ]
       {% assign work = site.data.works[index] %}
       {% if work.featured %}    
         <li>
-          <a href="{{ site.lang }}/works/{{ work.slug }}">
+          <a href="works/{{ work.slug }}" title="{{ work.title[lang] }}">
             <img src="/assets/images/works/{{work.slug}}/thumb.jpg" srcset="/assets/images/works/{{work.slug}}/thumb@2x.jpg 2x" alt="{{ work.title[lang] }}">
-            <h3>{{ work.title[site.lang] }}</h3>
-            <p>{{ work.summary[site.lang] }}</p>
+            <h3>{{ work.title[lang] }}</h3>
+            <p>{{ work.summary[lang] }}</p>
           </a>
         </li>
       {% endif %}

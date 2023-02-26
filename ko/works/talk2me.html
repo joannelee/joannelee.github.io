@@ -1,0 +1,24 @@
+---
+layout: project
+title: Talk2Me
+lang: ko
+ref: talk2me
+css: [ owl.carousel.min, owl.theme.min ]
+js: [ jquery-3.2.1.min, chart.min, owl.carousel.min ]
+---
+
+{% include project-image.html filename="cover" alt="Talk2Me" title="Talk2Me" %}
+
+<h2>기존 모바일 어학 경험의 개선</h2>
+<p>Talk2Me는 에듀테크 스타트업 퀄슨의 첫 B2C 서비스 개발 프로젝트로 시작되었습니다. 회사의 기존 서비스가 갖고 있던 한계점을 극복하고 사용자의 자투리 시간 활용을 유도하는 것을 목표로 진행된 프로젝트입니다.</p>
+{% include works/talk2me-chart.html %}
+<div class="talk2me-features">
+    {% include works/talk2me-feature.html label="a" title="메신저처럼 친숙한 인터페이스" description="답변 과정을 단순화하여 부담감 없이 자연스럽게 사용할 수 있게 합니다."%}
+    {% include works/talk2me-feature.html label="b" title="두 시간마다 바뀌는 컨텐츠" description="각 질문을 시간 한정 컨텐츠로 만들어 사용자들의 참여율을 높입니다."%}
+    {% include works/talk2me-feature.html label="c" title="쉽고 간편한 복습" description="첨삭된 부분을 하이라이트 표시하고 이전에 제출한 답변들을 오답노트처럼 모아서 보여줍니다."%}
+</div>
+
+<h2>모바일 어플리케이션 UX/GUI</h2>
+<p>Talk2Me 서비스는 1) 현재 시간대의 질문을 보여주는 Talk 탭, 2) 과거에 답했던 질문들과 답변 내용들을 모아서 보여주는 히스토리 탭, 3) 사용자 정보를 설정할 수 있는 프로필 탭, 4) 푸시 알림 설정 등 나머지 기능들을 모은 더 보기 탭까지 총 네 개의 탭으로 구성되어 있습니다. 어플리케이션 실행 시 바로 랜딩되는 Talk 탭에서는 현재 시간대의 질문을 확인하고 바로 답변 화면으로 진입할 수 있으며, 히스토리 탭에서는 지난 질문과 답변, 첨삭을 모두 모아보며 쉽게 복습할 수 있습니다.</p>
+{% include project-image.html filename="sketches" alt="Talk2Me 초기 아이디어 스케치" title="Talk2Me 초기 아이디어 스케치" %}
+{% include works/talk2me-carousel.html %}

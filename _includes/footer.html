@@ -1,0 +1,21 @@
+<footer class="site-footer container">
+  <p><a href="mailto:{{ site.author.email }}">{{ site.author.name }}</a> &copy; {{ site.time | date: '%Y' }}</p>
+  <p>
+    {% if page.ref != nil %}
+      {% assign translations = site.pages | where:"ref", page.ref %}
+      {% for translation in translations %}
+        {% if translation.lang != page.lang %}
+          <a href="{{ translation.url }}">
+            {% if page.lang == "ko" %}
+              Read in English
+            {% else %}
+              한국어로 읽기
+            {% endif %}
+          </a>
+        {% endif %}
+      {% endfor %}
+    {% else %}
+      <a href="/ko">한국어로 읽기</a> 
+    {% endif %}
+  </p>
+</footer>

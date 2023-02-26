@@ -1,0 +1,22 @@
+---
+layout: default
+---
+{% assign lang = page.lang %}
+<section class="works-intro">
+  <h2>Works</h2>
+  <p>{{ content }}</p>
+</section>
+<section class="works-list">
+  <ul>
+    {% for index in site.data.works["_sort"] %}
+      {% assign work = site.data.works[index] %}
+      <li>
+        <a href="{{ work.slug }}" title="{{ work.title[lang] }}">
+          <img src="/assets/images/works/{{ work.slug }}/thumb.jpg" srcset="/assets/images/works/{{ work.slug }}/thumb@2x.jpg 2x" alt="{{ work.title[lang] }}">
+          <h3>{{ work.title[lang] }}</h3>
+          <p>{{ work.summary[lang] }}</p>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

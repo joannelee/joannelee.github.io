@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+{% assign lang = page.lang %}
+{% assign project = site.data.works[page.ref] %}
+<section class="project-intro">
+    <h2>{{ project.title[lang] }}</h2>
+    <section class="project-intro-description">
+        <div>{{ project.description[lang] }}</div>
+        <ul>
+            {% if project.type == 'in-house' %}
+                <li><span>Company</span> <span><a href="{{ project.company.url }}" target="_blank">{{ project.company[lang] }}</a></span></li>
+            {% else %}
+                <li><span>Client</span> <span><a href="{{ project.client.url }}" target="_blank">{{ project.client[lang] }}</a></span></li>
+            {% endif %}
+            <li><span>Period</span> <span>{{ project.period }}</span></li>
+            <li><span>Scope</span> <span>{{ project.scope[lang] }}</span></li>
+        </ul>
+    </section>
+</section>
+<section class="project-content">
+    {{ content }}
+</section>

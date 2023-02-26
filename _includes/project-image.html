@@ -1,0 +1,14 @@
+<img
+    src="/assets/images/works/{{ page.ref }}/{{ include.filename }}.jpg"
+    srcset="/assets/images/works/{{ page.ref }}/{{ include.filename }}@2x.jpg 2x"
+    alt="{{ include.alt }}"
+    title="{{ include.title }}"
+    {% if include.onmobile == "show" %}
+        class = "show-on-mobile"
+    {% elsif include.onmobile == "hide" %}
+        class = "hide-on-mobile"
+    {% endif %}
+    {% if include.id %}
+        id = "{{ include.id }}"
+    {% endif %}
+>

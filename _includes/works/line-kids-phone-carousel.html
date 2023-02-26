@@ -1,0 +1,25 @@
+<div class="line-carousel">
+    <img class="mask" src="/assets/images/works/{{ page.ref }}/device-mask.png">
+    <div class="mask-bg"></div>
+    <div class="screens slider owl-carousel">
+        <div><img src="/assets/images/works/{{ page.ref }}/screen-a.png"></div>
+        <div><img src="/assets/images/works/{{ page.ref }}/screen-b.png"></div>
+        <div><img src="/assets/images/works/{{ page.ref }}/screen-c.png"></div>
+        <div><img src="/assets/images/works/{{ page.ref }}/screen-d.png"></div>
+        <div><img src="/assets/images/works/{{ page.ref }}/screen-e.png"></div>        
+    </div>
+    <script>
+        $(document).ready(function(){
+            $(".slider").owlCarousel({
+                margin: 100,
+                loop: true,
+                center: true,
+                autoplay: true,
+                autoplayTimeout: 2200,
+                autoWidth: true,
+                smartSpeed: 600,
+                dots: false
+            });
+          });
+    </script>
+</div>
