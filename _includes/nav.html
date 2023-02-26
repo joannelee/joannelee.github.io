@@ -1,9 +1,9 @@
 <nav class="nav container">
-  <a href="{{ site.url }}{{ site.baseurl }}{{ page.lang }}"><img src="{{ site.url }}/assets/images/logo.svg" alt="{{ site.title }}" class="logo"></a>
+  <a href="{{ site.url }}/{{ page.lang }}"><img src="{{ site.url }}/assets/images/logo.svg" alt="{{ site.title }}" class="logo"></a>
   <ul class="navbar">
     {% for menu in site.navbar %}
       <li>
-        <a href="{{ site.url }}{{ site.baseurl }}{{ page.lang }}/{{ menu }}" {% if page.url contains menu %} class="active" {% endif %}>{{ menu | capitalize }}</a>
+        <a href="{{ site.url }}/{{ page.lang }}/{{ menu }}" {% if page.url contains menu %} class="active" {% endif %}>{{ menu | capitalize }}</a>
       </li>
     {% endfor %}
   </ul>
