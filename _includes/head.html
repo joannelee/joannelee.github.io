@@ -37,16 +37,16 @@
   <title>{{ page_title }}</title>
 
   <!-- favicon -->
-  <link rel="manifest" href="{{ "{{ site.url }}/assets/favicon/site.webmanifest">
+  <link rel="manifest" href="{{ site.url }}/assets/favicon/site.webmanifest">
   <link
     rel="icon"
-    href="{{ "{{ site.url }}/assets/favicon/favicon.ico"
+    href="{{ site.url }}/assets/favicon/favicon.ico"
     sizes="any">
   <link
     rel="icon"
-    href="{{ "{{ site.url }}/assets/favicon/icon.svg"
+    href="{{ site.url }}/assets/favicon/icon.svg"
     type="image/svg+xml">
-  <link rel="apple-touch-icon" href="{{ "{{ site.url }}/assets/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" href="{{ site.url }}/assets/favicon/apple-touch-icon.png">
 
   {% assign page_description = '' %}
   {% capture page_description %}
@@ -76,14 +76,12 @@
 
   {% assign page_image = '' %}
   {% capture page_image %}
-    {% if page.cover %}
-      {{ page.cover | prepend: site.baseurl | prepend: site.url }}
+    {% if page.layout == 'project' %}
+      {{ site.url }}/assets/images/works/{{ page.ref }}/thumb@2x.jpg
     {% else %}
-      {{ site.cover | prepend: site.baseurl | prepend: site.url }}
+      {{ site.url }}/{{ site.cover }}
     {% endif %}
   {% endcapture %}
-  {% capture page_image %}
-    {{ page_image | strip | rstrip | lstrip | escape | strip_newlines }}{% endcapture %}
 
   <!-- Social: Facebook / Open Graph -->
   {% if page.id %}
@@ -97,11 +95,7 @@
   {% endif %}
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
   <meta property="og:title" content="{{ page_title }}">
-  {% if page.layout == 'project' %}
-    <meta property="og:image" content="{{ site.url }}/assets/images/works/{{ page.ref }}/thumb@2x.jpg">
-  {% else %}
-    <meta property="og:image" content="{{ page_image }}">
-  {% endif %}
+  <meta property="og:image" content="{{ page_image }}">
   <meta property="og:description" content="{{ page_description }}">
   <meta property="og:site_name" content="{{ site.author.name }}">
   {% if page.lang == 'ko' %}
@@ -140,7 +134,7 @@
   {% endif %}
 
   <link rel="stylesheet"
-    href="{{ "{{ site.url }}/assets/css/main.css"
+    href="{{ site.url }}/assets/css/main.css"
     type="text/css">
 
   <!-- Page-specific assets -->

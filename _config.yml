@@ -2,7 +2,7 @@
 title         : "Joanne Lee"
 description   : "UX designer based in Seoul, Korea."
 keywords      : "UX designer, product designer"
-url           : https://joannelee.kr/ # site url
+url           : https://joannelee.kr # site url
 baseurl       : # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
 cover         : "assets/images/cover.jpg"
 timezone      : Asia/Seoul
