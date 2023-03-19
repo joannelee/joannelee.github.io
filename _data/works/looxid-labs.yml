@@ -1,6 +1,6 @@
 slug: looxid-labs
 type: agency
-featured: true
+featured: false
 title:
   en: Looxid Labs CI
   ko: 룩시드랩스 CI
@@ -11,7 +11,7 @@ client:
   en: Looxid Labs
   ko: 룩시드랩스
   url: //looxidlabs.com
-period: 2015
+year: 2015
 scope:
   en: CI, PC application UX/GUI
   ko: CI, PC 어플리케이션 UX/GUI

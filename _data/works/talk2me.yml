@@ -1,6 +1,6 @@
 slug: talk2me
 type: in-house
-featured: false
+featured: true
 title:
   en: Talk2Me
   ko: Talk2Me
@@ -11,7 +11,7 @@ company:
   en: Qualson, Inc.
   ko: 퀄슨
   url: //qualson.com
-period: 2013
+year: 2013
 scope:
   en: Mobile application UX/GUI
   ko: 모바일 어플리케이션 UX/GUI

@@ -1,6 +1,6 @@
 slug: ame
 type: agency
-featured: true
+featured: false
 title:
   en: AMe concept video
   ko: AMe 컨셉 소개 영상
@@ -11,7 +11,7 @@ client:
   en: LINKFLOW Co., Ltd.
   ko: 링크플로우
   url: //linkflow.co.kr
-period: 2016
+year: 2016
 scope:
   en: Product concept development, video directing
   ko: 제품 컨셉 포인트 개발, 영상 기획

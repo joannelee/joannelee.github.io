@@ -1,6 +1,6 @@
 slug: line-kids-phone
 type: agency
-featured: true
+featured: false
 title:
   en: LINE Kids' Phone
   ko: LINE 키즈폰
@@ -11,10 +11,10 @@ client:
   en: KIWI PLUS Co., Ltd.
   ko: 키위플러스
   url: //kiwiplus.co.kr
-period: 2015
+year: 2015
 scope:
-  en: UX
-  ko: UX
+  en: Device UX
+  ko: 제품 UX
 description:
   en: <p>LINE Kids' Phone is a premium smartwatch for kids produced by KIWI PLUS. It was launched in the market in late 2015 and distributed by KT, one of the major telecommunications services providers in South Korea. The product's main features included location tracking, calling, and instant messaging.</p><p>As not many wearable devices in the market at this point were designed particularly for children, creating a new user experience for a kids' smartwatch was the most challenging task of this project. The project also involved product, web, and package design teams.</p>
   ko: <p>LINE 키즈폰은 키위플러스에서 개발한 어린이용 프리미엄 스마트워치로 2015년 하반기에 출시, KT를 통해 유통되었습니다. 위치 정보 전달, 전화, 문자메시지 등 어린이들의 안전을 위해 꼭 필요한 기능들을 탑재한 제품입니다.</p><p>태어날 때부터 디지털 기기에 둘러싸여 자라온 세대의 어린이들을 대상으로 한정적인 크기의 화면 위에서 어떤 방식으로 경험을 제공하는 게 가장 합리적일지 판단하는 것이 UX 팀에게 주어진 가장 큰 과제였습니다. 전체 프로젝트 진행을 위해 제품, 웹, 패키지 디자인 팀과 협업하였습니다.</p>

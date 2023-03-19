@@ -568,3 +568,29 @@ body {
     }
   }
 }
+
+/* LooxidVR */
+@keyframes alterImages {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.looxidvr-desktop-application-view {
+  position: relative;
+  img {
+    &:first-of-type {
+      position: absolute;
+      left: 0;
+    }
+    &:last-of-type {
+      animation-name: alterImages;
+      animation-timing-function: steps(2, jump-none);
+      animation-iteration-count: infinite;
+      animation-duration: $base-duration * 5;
+      animation-direction: alternate;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+slug: looxid-link
+type: in-house
+featured: true
+title:
+  en: Looxid Link
+  ko: 룩시드링크
+summary:
+  en: An add-on device which integrates brainwave sensing technology into Oculus and VIVE headsets
+  ko: VR 헤드셋용 뇌파 센서 액세서리 모듈인 룩시드링크의 제품 기획과 디자인 전반을 담당했습니다.
+company:
+  en: Looxid Labs
+  ko: 룩시드랩스
+  url: //looxidlabs.com
+year: 2019
+scope:
+  en: UX, communication design
+  ko: UX, 커뮤니케이션 디자인
+description:
+  en: <p>Looxid Link is a VR-compatible brain-sensing technology that seamlessly integrates a biometric system into VIVE and Oculus head-mounted display (HMD) platforms. Contrary to <a href="../looxid-vr">LooxidVR</a>, its predecessor, it was designed for relatively casual uses such as neurogaming or neurofeedback-based meditation. Following the launch of the product, Looxid Labs was selected as a finalist in the 2020 South by Southwest (SXSW) pitch competition.</p><p>As the product includes a Unity SDK and comes with application examples, the project scope extended to designing the documentation and demos.</p>
+  ko: <p>룩시드링크는 VIVE, 오큘러스 HMD와 호환 가능한 VR 헤드셋용 뇌파 기반 사용자 인터페이스입니다. 전문 실험 장비로 포지셔닝했던 <a href="../looxid-vr">룩시드VR</a>과는 다르게 게임이나 명상, 미디어아트 등 다양한 분야에 누구나 손쉽게 뇌파 데이터를 접목해볼 수 있게끔 보급형으로 만들어진 제품으로, 룩시드링크의 출시와 함께 2020년 SXSW가 선정한 50대 스타트업에 룩시드랩스가 이름을 올리기도 했습니다.</p><p>쉬운 제품 사용 및 다양한 가능성의 제시를 위해 기기와 더불어 Unity SDK와 예제 어플리케이션을 함께 제공했으며, 이에 따라 프로젝트 범위에 기술 문서와 데모 기획 또한 포함되었습니다.</p>
