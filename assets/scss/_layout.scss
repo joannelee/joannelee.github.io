@@ -49,6 +49,20 @@ body {
   @include transition(opacity $base-duration $base-timing);
 }
 
+@mixin image-switch {
+  position: relative;
+  img {
+    &:first-of-type {
+      position: absolute;
+      left: 0;
+    }
+    &:last-of-type {
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+  }
+}
+
 .container {
   width: 70rem;
   margin: 0 auto;
@@ -553,18 +567,12 @@ body {
   }
 }
 .looxid-labs-logo {
-  position: relative;
+  @include image-switch;
   img {
-    &:first-of-type {
-      position: absolute;
-      left: 0;
-    }
     &:last-of-type {
       animation-name: fadeInOut;
       animation-timing-function: $base-timing;
-      animation-iteration-count: infinite;
       animation-duration: $base-duration * 10;
-      animation-direction: alternate;
     }
   }
 }
@@ -579,18 +587,24 @@ body {
   }
 }
 .looxidvr-desktop-application-view {
-  position: relative;
+  @include image-switch;
   img {
-    &:first-of-type {
-      position: absolute;
-      left: 0;
-    }
     &:last-of-type {
       animation-name: alterImages;
       animation-timing-function: steps(2, jump-none);
-      animation-iteration-count: infinite;
       animation-duration: $base-duration * 5;
-      animation-direction: alternate;
+    }
+  }
+}
+
+/* IoMT */
+.iomt-pmc {
+  @include image-switch;
+  img {
+    &:last-of-type {
+      animation-name: alterImages;
+      animation-timing-function: steps(2, jump-none);
+      animation-duration: $base-duration * 7.5;
     }
   }
 }

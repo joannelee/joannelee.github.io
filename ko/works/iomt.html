@@ -6,3 +6,44 @@ ref: iomt
 ---
 
 {% include project-image.html filename="cover" alt="IoMT 기반 환자 모니터링 시스템" title="IoMT 기반 환자 모니터링 시스템" %}
+
+<h2>어플리케이션 구조 설계</h2>
+<p>실시간으로 업데이트 되는 다양한 신호와 값들을 의료진이 어려움 없이 빠르게 파악할 수 있어야 하기 때문에 정보 구조의 설계가 특히 중요한 프로젝트였습니다. 각 어플리케이션별로 포함해야 하는 정보와 기능들을 나열한 뒤 사용 시나리오에 맞춰 분류하고 중요도에 기반해 위치와 크기를 정해 배열하였습니다.</p>
+{% include project-image.html filename="information-architecture-1" alt="환자 감시 모니터 화면 구조" title="환자 감시 모니터 화면 구조" %}
+{% include project-image.html filename="information-architecture-2" alt="중앙 모니터링 시스템 화면 구조" title="중앙 모니터링 시스템 화면 구조" %}
+
+<h2>환자 감시 모니터</h2>
+<p>고대비 색상 구성으로 중요한 정보들이 특히 더 강조되게끔 어두운 배경색을 적용하고, 환자 정보가 표시되는 타이틀 영역 하단으로는 보기 모드를 빠르게 변경할 수 있도록 세그먼티드 버튼(segmented button)을 배치하였습니다.</p>
+<p>ECG View 모드에서는 최근 10초 동안의 심전도 파형과 함께 현재 시점 또는 가장 최근의 생체신호 값을 보여줍니다. 각 값들을 표시하는 색상은 기존 의료기기들에서 일반적으로 통용되는 것을 따랐으며, 상대적으로 중요도가 낮은 타임스탬프는 크기를 줄이고 명도를 낮춰 표시하였습니다.</p>
+{% include project-image.html filename="patient-monitor-1" alt="환자 감시 모니터 - ECG View" title="환자 감시 모니터 - ECG View" %}
+<p>Trend View를 선택하면 해당 시점까지의 누적 생체신호 데이터를 테이블 형태로 확인할 수 있습니다. 가장 최근에 기록된 값들이 오른쪽 끝에 표시되며 횡방향 스크롤을 통해 이전 데이터를 조회할 수 있습니다.</p>
+{% include project-image.html filename="patient-monitor-2" alt="환자 감시 모니터 - Trend View" title="환자 감시 모니터 - Trend View" %}
+<p>환자 정보나 센서 상세 정보 등을 확인할 때에도 생체신호 정보가 가려지지 않게 드로어(drawer) 형태로 표시되도록 했습니다. 닫기 버튼이나 드로어 바깥쪽 영역을 터치하면 다시 화면 전체를 활용해 데이터를 확인할 수 있습니다.</p>
+{% include project-image.html filename="patient-monitor-3" alt="환자 감시 모니터 - 검사 중 환자 정보 표시" title="환자 감시 모니터 - 검사 중 환자 정보 표시" %}
+<p>화면 하단의 버튼들을 통해 각 센서의 연결 상태를 확인하고 관리할 수 있습니다. 센서 연결 여부에 따라 상태 라벨의 색상이 초록색 또는 빨간색으로 표시되며, 센서가 연결되지 않은 상태에서 버튼을 클릭할 경우 좌측으로 드로어를 열어 주변에서 검색되는 기기들의 목록을 보여주고 연결할 센서를 선택할 수 있게 합니다.</p>
+{% include project-image.html filename="patient-monitor-4" alt="환자 감시 모니터 - 센서 연결 관리" title="환자 감시 모니터 - 센서 연결 관리" %}
+
+<h2>중앙 모니터링 시스템</h2>
+<p>중앙 모니터링 페이지를 통해 해당 기관 혹은 병동 내에서 모니터링 중인 환자들의 상태를 관제할 수 있습니다. 각 환자별로 환자 감시 모니터의 ECG View에서 표시하는 정보들을 동일하게 또는 간소화하여 실시간으로 표시합니다.</p>
+{% include project-image.html filename="central-monitor-1" alt="중앙 모니터링 시스템" title="중앙 모니터링 시스템" %}
+<p>생체신호 데이터 영역을 클릭하면 화면 하단으로 해당 환자의 누적 생체신호 데이터를 보여주는 Trend View 테이블이 표시됩니다.</p>
+<div class="iomt-pmc" title="중앙 모니터링 시스템 - Trend View">
+    {% include project-image.html filename="central-monitor-2-1-1" alt="중앙 모니터링 시스템" %}
+    {% include project-image.html filename="central-monitor-2-1-2" alt="중앙 모니터링 시스템 - Trend View" %}
+</div>
+<p>Trend View 테이블에서 부정맥이 발견되었던 구간을 클릭하면 그 시점을 포함하는 60초 길이의 심전도 데이터가 표시됩니다.</p>
+<div class="iomt-pmc" title="중앙 모니터링 시스템 - 부정맥 구간 ECG 데이터">
+    {% include project-image.html filename="central-monitor-2-2-1" alt="중앙 모니터링 시스템" %}
+    {% include project-image.html filename="central-monitor-2-2-2" alt="중앙 모니터링 시스템 - 부정맥 구간 ECG 데이터" %}
+</div>
+<p>검사 정보 영역을 클릭하면 환자 정보와 해당 환자에게 연결된 기기들의 정보를 확인할 수 있습니다.</p>
+<div class="iomt-pmc" title="중앙 모니터링 시스템 - 환자 정보">
+    {% include project-image.html filename="central-monitor-3-1" alt="중앙 모니터링 시스템" %}
+    {% include project-image.html filename="central-monitor-3-2" alt="중앙 모니터링 시스템 - 환자 정보" %}
+</div>
+<p>우측 상단의 설정 메뉴를 클릭하면 환자 관리, 병실 관리, 장비 관리 기능에 접근할 수 있습니다. 각 메뉴를 통해 환자, 병실, 장비 목록을 확인하고 새로운 항목을 추가하거나 기존 항목을 수정, 삭제할 수 있습니다.</p>
+<div class="iomt-pmc" title="중앙 모니터링 시스템 - 환자 관리">
+    {% include project-image.html filename="central-monitor-4-1-1" alt="중앙 모니터링 시스템" %}
+    {% include project-image.html filename="central-monitor-4-1-2" alt="중앙 모니터링 시스템 - 환자 관리" %}
+</div>
+{% include project-image.html filename="central-monitor-4-2" alt="중앙 모니터링 시스템 - 새 환자 추가" title="중앙 모니터링 시스템 - 새 환자 등록" %}

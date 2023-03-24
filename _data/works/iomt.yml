@@ -1,0 +1,20 @@
+slug: iomt
+type: freelance
+featured: true
+title:
+  en: IoMT-based Patient Monitoring System
+  ko: IoMT 기반 환자 모니터링 시스템
+summary:
+  en: An intra-hospital patient monitoring solution that utilises IoMT devices for collecting vital signs
+  ko: 의료 사물 인터넷 기술을 접목해 병원 내에서 환자의 생체신호를 모니터링하는 태블릿 PC 어플리케이션과 웹 어플리케이션을 디자인했습니다. 
+client:
+  en: HUINNO Co., Ltd.
+  ko: 휴이노
+  url: //huinno.com
+year: 2022
+scope:
+  en: Tablet PC application UX/GUI, web application UX/GUI
+  ko: 태블릿 PC 어플리케이션 UX/GUI, 웹 어플리케이션 UX/GUI
+description:
+  en: <p>When Internet of Medical Things (IoMT) technologies are embedded into patient monitoring systems in healthcare organisations, they can help hospitalised patients recover more safely.</p><p>The next-generation patient monitoring solution proposed in this project connects wearable vital signs sensors (i.e. ECG monitors, pulse oximeters, and blood pressure monitors) with tablets to conveniently monitor the individual patient's condition. Furthermore, it provides an at-a-glance view of the patients in the ward through a web application.</p>
+  ko: <p>의료 사물 인터넷 기술(IoMT)을 의료기관 내 환자 모니터링 시스템에 접목하면 입원 환자들의 안전한 회복을 도울 수 있습니다.</p><p>본 프로젝트에서는 무선 심전도 모니터, 산소포화도 측정기, 혈압계 등의 생체신호 센서를 태블릿 PC와 연결하여 개별 환자의 상태를 편리하게 모니터링하고 이를 관리하는 웹 어플리케이션을 통해 병동 내 환자들의 현황을 한 눈에 파악할 수 있도록 차세대 환자 모니터링 솔루션을 제안하였습니다.</p>

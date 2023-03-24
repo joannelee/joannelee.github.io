@@ -1,0 +1,20 @@
+slug: memo-2022
+type: in-house
+featured: false
+title:
+  en: MEMO (2022)
+  ko: MEMO (2022)
+summary:
+  en: An AI-powered ambulatory cardiac monitoring system with a better diagnostic yield
+  ko: 심전도 모니터링 AI 솔루션 MEMO의 진단 보조 소프트웨어와 ECG 리포트를 설계, 디자인했습니다.
+company:
+  en: HUINNO Co., Ltd.
+  ko: 휴이노
+  url: //huinno.com
+year: 2021-2022
+scope:
+  en: User research, web application UX/GUI, ECG report design
+  ko: 사용자 리서치, 웹 어플리케이션 UX/GUI, ECG 리포트 디자인
+description:
+  en: <p>MEMO is an AI-based electrocardiogram (ECG) monitoring solution designed to improve the diagnostic yield of cardiovascular diseases by overcoming the drawbacks of the traditional Holter monitor test. Conventional Holter monitoring can only last up to three days and requires medical staff to analyse all recorded data manually. With MEMO, it can be conducted for a maximum of 14 days, and the recorded data is pre-analysed by AI, helping the staff review the test results more efficiently and make accurate diagnoses.</p><p>In this project, user research was preceded to get a profound understanding of each stakeholder, and based on this, web-based diagnostic aid software and ECG report were designed.</p>
+  ko: <p>MEMO는 AI 기반 심전도 (ECG) 모니터링 솔루션으로, 기존 생활 심전도 검사 방식의 단점을 개선해 심혈관질환의 조기 진단률을 높일 수 있게 만들어진 제품입니다. 이전까지의 생활 심전도 검사는 최대 3일까지만 가능하고 측정된 데이터를 의료진이 모두 직접 분석해야 하는 어려움이 있었으나, MEMO로는 최대 14일까지 검사가 가능하며 측정된 데이터를 인공지능이 먼저 분석해 의료진이 검사 결과를 보다 효율적으로 검토하고 정확하게 진단할 수 있도록 보조합니다.</p><p>본 프로젝트에서는 서비스 디자인을 위해 사용자 리서치를 선행하고 이에 근거해 웹 기반 진단 보조 소프트웨어와 ECG 리포트를 설계, 디자인하였습니다.</p>
