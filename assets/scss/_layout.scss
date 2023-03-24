@@ -317,12 +317,16 @@ body {
   p {
     @include paragraph;
     margin-top: $base-spacing * 0.5;
+    margin-bottom: $base-spacing * 0.75;
   }
   img {
     margin-bottom: $base-spacing * 0.5;
     @include for-size(mobile-only) {
       margin-bottom: 0;
     }
+  }
+  .subsection {
+    margin-top: $base-spacing;
   }
   .show-on-mobile {
     display: none;
