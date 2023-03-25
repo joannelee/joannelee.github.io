@@ -9,7 +9,7 @@
 html,
 body {
   width: 100%;
-  height: 100%;
+  // height: 100%;
 }
 
 body {
@@ -354,6 +354,21 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+  }
+}
+
+.page-not-found {
+  margin-top: - $base-spacing * 1.5;
+  padding-bottom: $base-spacing * 2.5;
+  @include for-size(mobile-only) {
+    margin-top: - $base-spacing;
+    padding-bottom: $base-spacing;
+  }
+  text-align: center;
+  p {
+    &:first-of-type{
+      font-size: 3rem;
+    }
   }
 }
 
