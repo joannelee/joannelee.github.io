@@ -3,6 +3,8 @@ layout: index
 title: Home
 lang: ko
 ref: index
+sitemap:
+  priority: 1.0
 js: [ fontawesome.min, solid.min, brands.min ]
 ---
 

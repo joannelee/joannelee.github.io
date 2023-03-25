@@ -1,0 +1,8 @@
+---
+layout: sitemap
+title: English Sitemap
+lang: en
+ref: sitemap
+sitemap:
+  excluded: true
+---
