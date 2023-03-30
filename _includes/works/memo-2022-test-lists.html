@@ -1,0 +1,27 @@
+<div
+    {% if page.lang == 'ko' %}
+    title="검사 목록"
+    {% else %}
+    title="ECG test list"
+    {% endif %}
+>
+    {% include project-image.html filename="test-list-1" type="slide" %}
+    {% include project-image.html filename="test-list-2" type="slide" %}
+    {% include project-image.html filename="test-list-3" type="slide" %}
+    {% include project-image.html filename="test-list-4" type="slide" %}
+</div>
+<script>
+    var index = 0;
+    slider();
+    function slider() {
+      var i;
+      var x = document.getElementsByClassName("slide");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      index++;
+      if (index > x.length) {index = 1}    
+      x[index-1].style.display = "block";  
+      setTimeout(slider, 2500);
+    }
+</script>

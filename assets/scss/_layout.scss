@@ -616,6 +616,11 @@ body {
   }
 }
 
+/* MEMO (2022) */
+.slide {
+  display: none;
+}
+
 /* IoMT */
 .iomt-pmc {
   @include image-switch;

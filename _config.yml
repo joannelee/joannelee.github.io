@@ -33,7 +33,6 @@ author:
   email    : joanne.j.leee@gmail.com
 
 plugins:
-  - jekyll-sitemap
   - bourbon
   - jekyll-paginate
 

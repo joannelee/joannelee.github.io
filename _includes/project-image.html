@@ -3,14 +3,24 @@
     {% unless include.retina == "none" %}
         srcset="/assets/images/works/{{ page.ref }}/{{ include.filename }}@2x.jpg 2x"
     {% endunless %}
-    alt="{{ include.alt }}"
-    title="{{ include.title }}"
+
+    {% if include.alt %}
+        alt="{{ include.alt }}"
+    {% endif %}
+    {% if include.title %}
+        title="{{ include.title }}"
+    {% endif %}
+    {% if include.id %}
+        id = "{{ include.id }}"
+    {% endif %}
+    
     {% if include.onmobile == "show" %}
         class = "show-on-mobile"
     {% elsif include.onmobile == "hide" %}
         class = "hide-on-mobile"
     {% endif %}
-    {% if include.id %}
-        id = "{{ include.id }}"
+
+    {% if include.type == "slide" %}
+        class = "slide"
     {% endif %}
 >

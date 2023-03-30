@@ -52,3 +52,6 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Unedited image files
+assets/images/works/_originals
