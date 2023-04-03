@@ -11,14 +11,14 @@ js: [ multilingual, fontawesome.min, solid.min, brands.min ]
 </section>
 
 <section class="about-contact">
-  <h1>Get in touch</h1>
+  <h2>Get in touch</h2>
   <p><i class="fa-solid fa-envelope"></i> <a href="mailto:joanne.j.leee@gmail.com">joanne.j.leee@gmail.com</a></p>
   <p><i class="fa-brands fa-linkedin-in"></i> <a href="https://linkedin.com/in/joanneleee" target="_blank">linkedin.com/in/joanneleee</a></p>
   <p><i class="fa-brands fa-github"></i> <a href="https://github.com/joannelee" target="_blank">@joannelee</a></p>
 </section>
 
 <section class="works-list">
-  <h1>Featured works</h1>
+  <h2>Featured works</h2>
   <ul>
     {% for index in site.data.works["_sort"] %}
       {% assign work = site.data.works[index] %}
@@ -26,7 +26,7 @@ js: [ multilingual, fontawesome.min, solid.min, brands.min ]
         <li>
           <a href="{{ site.lang }}/works/{{ work.slug }}">
             <img src="/assets/images/works/{{work.slug}}/thumb.jpg" srcset="/assets/images/works/{{work.slug}}/thumb@2x.jpg 2x" alt="{{ work.title[lang] }}">
-            <h2>{{ work.title[site.lang] }}</h2>
+            <h3>{{ work.title[site.lang] }}</h3>
             <p>{{ work.summary[site.lang] }}</p>
           </a>
         </li>
