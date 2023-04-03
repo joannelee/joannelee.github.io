@@ -194,7 +194,8 @@ body {
   }
   padding-top: $base-spacing;
   margin-top: $base-spacing;
-  h3 {
+  h2 {
+    margin-top: 0;
     margin-bottom: $base-spacing;
   }
   ul {
@@ -270,7 +271,7 @@ body {
         opacity: 0.85;
       }
     }
-    h3 {
+    h2 {
       margin: $base-spacing * 0.125 0;
     }
   }

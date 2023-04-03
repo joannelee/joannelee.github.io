@@ -1,0 +1,9 @@
+---
+layout: null
+sitemap:
+  excluded: true
+---
+
+User-agent: *
+Disallow:
+Sitemap: {{ site.url }}/sitemap.xml
