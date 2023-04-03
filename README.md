@@ -6,6 +6,10 @@ You can have a look at the site structure above or check out the published pages
 
 If you're interested in what I do or have any questions regarding this repo, feel free to drop me a line via email (<joanne.j.leee@gmail.com>) or Twitter ([@joanneleey]).
 
+⚠️ **License**  
+The source code is licensed under the MIT license.  
+Contents of this repo are © Copyright 2023 Joanne J Lee. All rights reserved.
+
 [GitHub]: https://github.com
 [Jekyll]: https://jekyllrb.com
 [joannelee.kr]: https://joannelee.kr
