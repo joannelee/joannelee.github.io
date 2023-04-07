@@ -10,9 +10,9 @@ layout: default
         <div>{{ project.description[lang] }}</div>
         <ul>
             {% if project.type == 'in-house' %}
-                <li><span>Company</span> <span><a href="{{ project.company.url }}" target="_blank">{{ project.company[lang] }}</a></span></li>
+                <li><span>Company</span> <span><a href="{{ project.company.url }}" target="_blank" rel="noopener noreferrer">{{ project.company[lang] }}</a></span></li>
             {% else %}
-                <li><span>Client</span> <span><a href="{{ project.client.url }}" target="_blank">{{ project.client[lang] }}</a></span></li>
+                <li><span>Client</span> <span><a href="{{ project.client.url }}" target="_blank" rel="noopener noreferrer">{{ project.client[lang] }}</a></span></li>
             {% endif %}
             <li><span>Year</span> <span>{{ project.year }}</span></li>
             <li><span>Scope</span> <span>{{ project.scope[lang] }}</span></li>
