@@ -2,7 +2,7 @@ Gem::Specification.new do |spec|
 	spec.name          = "joannelee.kr"
 	spec.version       = "1.0.0"
 	spec.authors       = ["Joanne J Lee"]
-	spec.email         = ["joanne.j.leee@gmail.com"]
+	spec.email         = ["j@joannelee.kr"]
 
 	spec.summary       = "A portfoliio page of Joanne J Lee"
 	spec.homepage      = "https://github.com/joannelee/joannelee.github.io"

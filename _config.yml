@@ -30,7 +30,7 @@ sass:
 # Author settings
 author:
   name     : "Joanne J Lee"
-  email    : joanne.j.leee@gmail.com
+  email    : j@joannelee.kr
 
 plugins:
   - bourbon
