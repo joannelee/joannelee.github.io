@@ -9,43 +9,4 @@ sitemap:
 
 {% include project-image.html filename="cover" alt="IoMT-based patient monitoring system" title="IoMT-based patient monitoring system" %}
 
-<h2>Information architecture</h2>
-<p>As medical staff must quickly and intuitively process the various biological signals that continuously update in real-time, structuring information architecture was a crucial part of the project. The required information and functions were listed first, then categorised based on possible user scenarios, and positioned and sized according to importance.</p>
-{% include project-image.html filename="information-architecture-1" alt="Patient monitor diagram" title="Patient monitor diagram" %}
-{% include project-image.html filename="information-architecture-2" alt="Central monitor diagram" title="Central monitor diagram" %}
-
-<h2>Patient monitor</h2>
-<p>With a high-contrast colour scheme, important information is highlighted against a dark background. Beneath the title area where patient information is displayed, a segmented button is placed for quick toggling of view modes.</p>
-<p class="subsection">ECG view shows the current or most recent vital signs readings along with the ECG waveform from the last 10 seconds. The colours of each value follow those commonly used in conventional medical devices. Since the timestamp is relatively less important, it is displayed in a smaller size and with reduced brightness.</p>
-{% include project-image.html filename="patient-monitor-1" alt="Patient monitor - ECG view" title="Patient monitor - ECG view" %}
-<p class="subsection">In the trend view, the history of the patient's vital signs data is presented in the form of a table. The most recent readings are displayed at the right-hand end. By scrolling sideways, users can navigate to previous data.</p>
-{% include project-image.html filename="patient-monitor-2" alt="Patient monitor - trend view" title="Patient monitor - trend view" %}
-<p class="subsection">The patient information and sensor details are displayed in a drawer in order to prevent the vital signs from being obstructed when viewing them. Tapping the close button or the area outside the drawer brings the full-screen data display back.</p>
-{% include project-image.html filename="patient-monitor-3" alt="Patient monitor - side drawer UI" title="Patient monitor - side drawer UI" %}
-<p class="subsection">Each sensor's connection status can be monitored and controlled via the buttons at the bottom. The connection indicator appears green or red, depending on the status. When clicking the button with no sensor connected, a drawer will be shown to the left, listing nearby devices and allowing users to select one to connect.</p>
-{% include project-image.html filename="patient-monitor-4" alt="Patient monitor - sensor connection control" title="Patient monitor - sensor connection control" %}
-
-<h2>Central monitoring system</h2>
-<p>The central monitoring system gives medical staff an overview of the condition of the patients being monitored within the facility. It displays the same or a simplified version of the information shown in the ECG view of the patient monitor in real-time.</p>
-{% include project-image.html filename="central-monitor-1" alt="Central monitoring system" title="Central monitoring system" %}
-<p class="subsection">A trend view table will appear at the bottom of the screen as the user clicks on the vital signs data area, showing the data history for that patient.</p>
-<div class="iomt-pmc" title="Central monitoring system - trend view table">
-    {% include project-image.html filename="central-monitor-2-1-1" alt="Central monitoring system" %}
-    {% include project-image.html filename="central-monitor-2-1-2" alt="Central monitoring system - trend view table" %}
-</div>
-<p class="subsection">By clicking on the column where the arrhythmia was detected in the table, 60 seconds of ECG data covering that time point will be displayed.</p>
-<div class="iomt-pmc" title="Central monitoring system - arrhythmia ECG strip">
-    {% include project-image.html filename="central-monitor-2-2-1" alt="Central monitoring system - trend view table" %}
-    {% include project-image.html filename="central-monitor-2-2-2" alt="Central monitoring system - arrhythmia ECG strip" %}
-</div>
-<p class="subsection">The details about the patient and the devices connected to that patient can be viewed by clicking on the metadata area.</p>
-<div class="iomt-pmc" title="Central monitoring system - patient information">
-    {% include project-image.html filename="central-monitor-3-1" alt="Central monitoring system" %}
-    {% include project-image.html filename="central-monitor-3-2" alt="Central monitoring system - patient information" %}
-</div>
-<p class="subsection">From the settings menu in the top right corner, users can access patient management, ward management, and device management menus, which allow them to view lists of each, add new items, and edit existing items.</p>
-<div class="iomt-pmc" title="Central monitoring system - patient list">
-    {% include project-image.html filename="central-monitor-4-1-1" alt="Central monitoring system - settings" %}
-    {% include project-image.html filename="central-monitor-4-1-2" alt="Central monitoring system - patient list" %}
-</div>
-{% include project-image.html filename="central-monitor-4-2" alt="Central monitoring system - add new patient" title="Central monitoring system - add new patient" %}
+<p class="confidential">⚠️ Project details are undisclosed due to confidentiality reasons.</p>
