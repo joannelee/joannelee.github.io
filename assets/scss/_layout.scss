@@ -329,6 +329,16 @@ body {
   .subsection {
     margin-top: $base-spacing;
   }
+  .showcase {
+    background-color: $ultralight-gray-color;
+    width: 100%;
+    padding: $base-spacing * 1.5 $base-spacing * 2.5 $base-spacing * 1.5 $base-spacing * 2.5;
+    list-style-type: square;
+    svg {
+      height: 0.8rem!important;
+      vertical-align:0!important;
+    }
+  }
   .confidential {
     background-color: $ultralight-gray-color;
     width: 100%;
