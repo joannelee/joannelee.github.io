@@ -63,6 +63,13 @@ body {
   }
 }
 
+@mixin outlink-fontawesome{
+  svg {
+    height: 0.8rem!important;
+    vertical-align:0!important;
+  }
+}
+
 .container {
   width: 70rem;
   margin: 0 auto;
@@ -334,10 +341,7 @@ body {
     width: 100%;
     padding: $base-spacing * 1.5 $base-spacing * 2.5 $base-spacing * 1.5 $base-spacing * 2.5;
     list-style-type: square;
-    svg {
-      height: 0.8rem!important;
-      vertical-align:0!important;
-    }
+    @include outlink-fontawesome;
   }
   .confidential {
     background-color: $ultralight-gray-color;
@@ -345,6 +349,10 @@ body {
     padding: $base-spacing * 1.5;
     font-weight: 500;
     text-align: center;
+    a {
+      font-weight: 400;
+    }
+    @include outlink-fontawesome;
   }
   .show-on-mobile {
     display: none;

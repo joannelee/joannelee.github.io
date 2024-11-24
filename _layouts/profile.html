@@ -17,7 +17,7 @@ layout: default
     <ul>
         {% for experience in site.data.experience %}
         <li>
-            <span><a href="{{ experience.url }}" target="_blank" rel="noopener noreferrer">{{ experience.company[lang] }}</a></span>
+            <span><a href="{{ experience.url }}" target="_blank" rel="noreferrer">{{ experience.company[lang] }}</a></span>
             <span>{{ experience.title[lang] }}</span>
             <span>{{ experience.year }}</span>
         </li>
@@ -29,7 +29,7 @@ layout: default
     <ul>
         {% for education in site.data.education %}
         <li>
-            <span><a href="{{ education.url[lang] }}" target="_blank" rel="noopener noreferrer">{{ education.school[lang] }}</a></span>
+            <span><a href="{{ education.url[lang] }}" target="_blank" rel="noreferrer">{{ education.school[lang] }}</a></span>
             <span>{{ education.degree[lang] }}</span>
             <span>{{ education.year }}</span>
         </li>
