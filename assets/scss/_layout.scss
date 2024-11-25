@@ -333,6 +333,17 @@ body {
       margin-bottom: 0;
     }
   }
+  .image-caption {
+    width: 100%;
+    font-size: $base-font-size * 0.8;
+    text-align: center;
+    margin-top: $base-spacing * -0.25;
+    margin-bottom: $base-spacing * 2;
+    @include for-size(mobile-only) {
+      margin-top: $base-spacing * 0.125;
+      margin-bottom: $base-spacing * 1.5;
+    }
+  }
   .subsection {
     margin-top: $base-spacing;
   }
