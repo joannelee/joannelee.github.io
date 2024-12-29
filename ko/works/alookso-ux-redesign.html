@@ -1,0 +1,63 @@
+---
+layout: project
+title: 얼룩소 UX 개편
+lang: ko
+ref: alookso-ux-redesign
+sitemap:
+  priority: 0.5
+---
+
+{% include project-image.html filename="cover" alt="얼룩소 UX 개편" title="얼룩소 UX 개편" %}
+
+<h2>페이지 및 세부 섹션 통폐합</h2>
+<p class="subsection">중요도가 높지 않은데도 여러 페이지에 중복적으로 노출되는 내용이 있는가 하면 속성이 유사함에도 서로 다른 페이지에 분리되어 표시되는 내용이 있어 사용자들이 메뉴와 페이지 구성의 논리를 이해하기 어려워지고, 이에 따라 사용성이 떨어지는 부분들이 존재합니다.</p>
+{% include project-image.html filename="page-organising-as-is-01-desktop" onmobile="hide" alt="토픽 관련 기능들이 그 중요도에 비해 지나치게 전면에 중복적으로 노출됨" title="토픽 관련 기능들이 그 중요도에 비해 지나치게 전면에 중복적으로 노출됨" caption="토픽 관련 기능들이 그 중요도에 비해 지나치게 전면에 중복적으로 노출됨" %}
+{% include project-image.html filename="page-organising-as-is-01-mobile" onmobile="show" alt="토픽 관련 기능들이 그 중요도에 비해 지나치게 전면에 중복적으로 노출됨" title="토픽 관련 기능들이 그 중요도에 비해 지나치게 전면에 중복적으로 노출됨" caption="토픽 관련 기능들이 그 중요도에 비해 지나치게 전면에 중복적으로 노출됨" %}
+{% include project-image.html filename="page-organising-as-is-02-desktop" onmobile="hide" alt="사용자들이 자주 혼동하는 [내 홈]과 [내 프로필]" title="사용자들이 자주 혼동하는 [내 홈]과 [내 프로필]" caption="사용자들이 자주 혼동하는 [내 홈]과 [내 프로필]" %}
+{% include project-image.html filename="page-organising-as-is-02-mobile" onmobile="show" alt="사용자들이 자주 혼동하는 [내 홈]과 [내 프로필]" title="사용자들이 자주 혼동하는 [내 홈]과 [내 프로필]" caption="사용자들이 자주 혼동하는 [내 홈]과 [내 프로필]" %}
+<p class="subsection">이러한 부분들을 해결하기 위해 전체 서비스 페이지 트리를 펼쳐놓고 각 페이지 내 세부 섹션들을 재검토하여 통폐합안을 제시했습니다.</p>
+{% include project-image.html filename="page-organising-in-progress" alt="전체 서비스 페이지 및 세부 섹션 재검토" title="전체 서비스 페이지 및 세부 섹션 재검토" %}
+<p class="subsection">우선 하단 내비게이션 바에 위치한 [토픽]과 [내 홈]을 [보관함]과 [내 피드]로 변경하였습니다.</p>
+<p>[내 피드]는 [토픽]과 기존 [내 홈]의 피드 탭을 통합한 것으로, 팔로우 중인 사용자 또는 관심 토픽의 새 글들을 한 곳에서 확인할 수 있게 하였습니다. 또한 [내 홈]이라는 이름 때문에 이를 [내 프로필]로 오인하는 경우가 잦았어서 혼동하지 않게끔 명칭을 [내 피드]로 바꾸었습니다.</p>
+<p>[보관함]은 기존 [내 홈]의 북마크와 에어북만 떼어내 새롭게 이름 붙인 것으로 [내 피드]는 새로운 콘텐츠들로 계속 채워지도록 구성한 반면, [보관함]은 북마크 해둔 글 또는 저장해둔 에어북(전자책)처럼 사용자가 나중에 다시 확인할 목적으로 표시해둔 콘텐츠들의 모음으로 구성하였습니다.</p>
+{% include project-image.html filename="page-organising-to-be-01-desktop" onmobile="hide" alt="신규 내비게이션 메뉴 [보관함]과 [내 피드] 제시안" title="신규 내비게이션 메뉴 [보관함]과 [내 피드] 제시안" caption="좌: 나중에 다시 확인할 목적으로 모아둔 콘텐츠들을 묶어 구성한 [보관함] / 우: 새로운 콘텐츠들로 계속 채워지도록 구성한 [내 피드]" %}
+{% include project-image.html filename="page-organising-to-be-01-mobile" onmobile="show" alt="신규 내비게이션 메뉴 [보관함]과 [내 피드] 제시안" title="신규 내비게이션 메뉴 [보관함]과 [내 피드] 제시안" caption="상: 나중에 다시 확인할 목적으로 모아둔 콘텐츠들을 묶어 구성한 [보관함] / 하: 새로운 콘텐츠들로 계속 채워지도록 구성한 [내 피드]" %}
+<p class="subsection">기존 [토픽]의 토픽 팔로우/언팔로우 기능은 상대적으로 사용 빈도가 떨어지는 기능이기 때문에 [내 피드]의 좌측 끝 + 탭 버튼을 클릭하여 접근하도록 변경하였습니다.</p>
+{% include project-image.html filename="page-organising-to-be-02-desktop" onmobile="hide" alt="토픽 팔로우/언팔로우 기능의 위치를 하위 뎁스로 변경" title="토픽 팔로우/언팔로우 기능의 위치를 하위 뎁스로 변경" %}
+{% include project-image.html filename="page-organising-to-be-02-mobile" onmobile="show" alt="토픽 팔로우/언팔로우 기능의 위치를 하위 뎁스로 변경" title="토픽 팔로우/언팔로우 기능의 위치를 하위 뎁스로 변경" %}
+<p class="subsection">사용자 프로필에서는 헤더 이미지, 토픽과 같이 불필요하거나 중복되는 부분을 걷어내고 소개글, 활동 내역(작성 글, 댓글), 다른 사용자와 주고 받은 인터랙션(받은 글, 좋아요) 위주로 내용을 재편하였습니다.</p>
+{% include project-image.html filename="page-organising-to-be-03-desktop" onmobile="hide" alt="사용자 프로필 변경안" title="사용자 프로필 변경안" %}
+{% include project-image.html filename="page-organising-to-be-03-mobile" onmobile="show" alt="사용자 프로필 변경안" title="사용자 프로필 변경안" %}
+
+<h2>가입 UX 변경</h2>
+<p class="subsection">계정 생성이 완료되면 팔로우할 사용자와 구독할 뉴스레터를 선택하는 단계가 이어지는데, a&#41; 사용자의 관심 분야에 맞춰 개인화하지 않고 고정된 목록으로 팔로우할 대상을 추천하여 효율성이 떨어지는 점, b&#41; 발행하는 뉴스레터가 한 개로 줄었음에도 불필요하게 구독 선택 단계가 크게 들어가 있는 점에 대해 개선이 필요하다고 판단해 이를 고친 UX 변경안을 제시하였습니다.</p>
+{% include project-image.html filename="sign-up-as-is-desktop" onmobile="hide" alt="비효율적 가입 UX" title="비효율적 가입 UX" caption="좌: 개인화 되지 않아 비효율적인 팔로우 대상 추천 목록 / 우: 불필요하게 크게 들어가 있는 뉴스레터 구독 선택 단계" %}
+{% include project-image.html filename="sign-up-as-is-mobile" onmobile="show" alt="비효율적 가입 UX" title="비효율적 가입 UX" caption="상: 개인화 되지 않아 비효율적인 팔로우 대상 추천 목록 / 하: 불필요하게 크게 들어가 있는 뉴스레터 구독 선택 단계" %}
+<p class="subsection">변경안에서는 팔로우 추천 목록을 보여주기 이전에 관심 분야를 먼저 선택하게 하고, 이에 기반해 이어지는 단계에서 팔로우할 사용자를 추천합니다.</p>
+{% include project-image.html filename="sign-up-to-be-01-desktop" onmobile="hide" alt="사용자가 선택한 관심 분야에 기반해 팔로우할 사용자 추천" title="사용자가 선택한 관심 분야에 기반해 팔로우할 사용자 추천" %}
+{% include project-image.html filename="sign-up-to-be-01-mobile" onmobile="show" alt="사용자가 선택한 관심 분야에 기반해 팔로우할 사용자 추천" title="사용자가 선택한 관심 분야에 기반해 팔로우할 사용자 추천" %}
+<p class="subsection">뉴스레터 구독 선택은 별도 페이지로 두지 않고 하단 시트를 활용하여 무게감을 줄였습니다.</p>
+{% include project-image.html filename="sign-up-to-be-02-desktop" onmobile="hide" alt="하단 시트를 활용한 뉴스레터 구독 선택 UI" title="하단 시트를 활용한 뉴스레터 구독 선택 UI" %}
+{% include project-image.html filename="sign-up-to-be-02-mobile" onmobile="show" alt="하단 시트를 활용한 뉴스레터 구독 선택 UI" title="하단 시트를 활용한 뉴스레터 구독 선택 UI" %}
+
+<h2>모바일 메뉴 UI 변경</h2>
+<p class="subsection">모바일 환경에서 a&#41; 하단 내비게이션 바와 좌측 사이드 메뉴가 서로 중복되어 비효율적인 점, b&#41; 웹과 앱에서의 메뉴 디자인이 통일되지 않은 점을 해결하기 위해 모바일 메뉴 UI 변경안을 제시하였습니다.</p>
+{% include project-image.html filename="mobile-menu-as-is-01-desktop" onmobile="hide" alt="하단 내비게이션 바와 좌측 사이드 메뉴의 일부 항목들이 서로 중복됨" title="하단 내비게이션 바와 좌측 사이드 메뉴의 일부 항목들이 서로 중복됨" caption="하단 내비게이션 바와 좌측 사이드 메뉴의 일부 항목들이 서로 중복됨" %}
+{% include project-image.html filename="mobile-menu-as-is-01-mobile" onmobile="show" alt="하단 내비게이션 바와 좌측 사이드 메뉴의 일부 항목들이 서로 중복됨" title="하단 내비게이션 바와 좌측 사이드 메뉴의 일부 항목들이 서로 중복됨" caption="하단 내비게이션 바와 좌측 사이드 메뉴의 일부 항목들이 서로 중복됨" %}
+{% include project-image.html filename="mobile-menu-as-is-02-1-desktop" onmobile="hide" alt="웹과 앱에서의 화면 상/하단 메뉴 디자인이 통일되지 않음" title="웹과 앱에서의 화면 상/하단 메뉴 디자인이 통일되지 않음" caption="웹과 앱에서의 화면 상/하단 메뉴 디자인이 통일되지 않음" %}
+{% include project-image.html filename="mobile-menu-as-is-02-1-mobile" onmobile="show" alt="웹과 앱에서의 화면 상/하단 메뉴 디자인이 통일되지 않음" title="웹과 앱에서의 화면 상/하단 메뉴 디자인이 통일되지 않음" caption="웹과 앱에서의 화면 상/하단 메뉴 디자인이 통일되지 않음" %}
+{% include project-image.html filename="mobile-menu-as-is-02-2-desktop" onmobile="hide" alt="웹과 앱에서의 사이드 메뉴 디자인이 통일되지 않음" title="웹과 앱에서의 사이드 메뉴 디자인이 통일되지 않음" caption="웹과 앱에서의 사이드 메뉴 디자인이 통일되지 않음" %}
+{% include project-image.html filename="mobile-menu-as-is-02-2-mobile" onmobile="show" alt="웹과 앱에서의 사이드 메뉴 디자인이 통일되지 않음" title="웹과 앱에서의 사이드 메뉴 디자인이 통일되지 않음" caption="웹과 앱에서의 사이드 메뉴 디자인이 통일되지 않음" %}
+<p class="subsection">변경안에서는 모바일 웹과 앱 공통으로 c&#41; 좌측 상단의 메뉴 버튼을 제거하고 d&#41; 웹에서는 [내 프로필], 앱에서는 [설정]으로 연결되던 우측 상단 버튼을 사이드 메뉴 버튼으로 활용해 두 기능 모두와 좌측 사이드 메뉴에 있던 일부 기능을 포함시키도록 하였습니다. 변경안을 적용할 경우 중복 항목들을 제거하고 접근성이 떨어지던 내 프로필, 분석하기, 내 포인트 등의 메뉴를 전면으로 옮겨올 수 있게 됩니다.</p>
+{% include project-image.html filename="mobile-menu-to-be-desktop" onmobile="hide" alt="모바일 메뉴 UI 개선안" title="모바일 메뉴 UI 개선안" caption="모바일 메뉴 UI 개선안"%}
+{% include project-image.html filename="mobile-menu-to-be-mobile" onmobile="show" alt="모바일 메뉴 UI 개선안" title="모바일 메뉴 UI 개선안" caption="모바일 메뉴 UI 개선안"%}
+
+<h2>포스트 댓글 UI 변경</h2>
+<p class="subsection">포스트에 달린 댓글을 확인하기 위해서는 본문 하단의 버튼을 클릭해 모달을 열어야 해 접근성이 떨어지며, 모달 내에서도 댓글이 최신순으로만 정렬되며 구조상 위계가 존재하지 않아 맥락과 연관성을 파악하기 어렵습니다.</p>
+{% include project-image.html filename="post-comments-as-is-01-desktop" onmobile="hide" alt="포스트 하단의 버튼을 클릭해야만 댓글이 표시됨" title="포스트 하단의 버튼을 클릭해야만 댓글이 표시됨" caption="포스트 하단의 버튼을 클릭해야만 댓글이 표시됨" %}
+{% include project-image.html filename="post-comments-as-is-01-mobile" onmobile="show" alt="포스트 하단의 버튼을 클릭해야만 댓글이 표시됨" title="포스트 하단의 버튼을 클릭해야만 댓글이 표시됨" caption="포스트 하단의 버튼을 클릭해야만 댓글이 표시됨" %}
+{% include project-image.html filename="post-comments-as-is-02-desktop" onmobile="hide" alt="댓글 사이의 맥락과 연관성을 파악하기 어려움" title="댓글 사이의 맥락과 연관성을 파악하기 어려움" caption="댓글이 최신순으로만 정렬되며 구조상 위계가 존재하지 않기 때문에 역순으로 읽어야만 맥락을 파악할 수 있음" %}
+{% include project-image.html filename="post-comments-as-is-02-mobile" onmobile="show" alt="댓글 사이의 맥락과 연관성을 파악하기 어려움" title="댓글 사이의 맥락과 연관성을 파악하기 어려움" caption="댓글이 최신순으로만 정렬되며 구조상 위계가 존재하지 않기 때문에 역순으로 읽어야만 맥락을 파악할 수 있음" %}
+<p class="subsection">사용자들의 댓글 참여율을 높이기 위해 위의 문제들에 대한 개선안을 제시하였습니다. a&#41; 불필요한 버튼 클릭 단계를 제거하고 댓글 목록을 포스트 본문 하단으로 바로 이어지게 하여 노출률을 높이고, b&#41; 대댓글 구조를 추가하여 가독성을 높이고자 하였으며, c&#41; 최신순 외에도 좋아요순, 등록순 정렬 옵션을 추가하여 사용자들이 댓글을 더 용이하게 탐색할 수 있게 하였습니다.</p>
+{% include project-image.html filename="post-comments-to-be-desktop" onmobile="hide" alt="포스트 댓글 UI 개선안" title="포스트 댓글 UI 개선안" caption="포스트 댓글 UI 개선안" %}
+{% include project-image.html filename="post-comments-to-be-mobile" onmobile="show" alt="포스트 댓글 UI 개선안" title="포스트 댓글 UI 개선안" caption="포스트 댓글 UI 개선안" %}
