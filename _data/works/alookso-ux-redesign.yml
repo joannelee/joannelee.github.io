@@ -10,11 +10,11 @@ summary:
 company:
   en: alookso Corp.
   ko: 얼룩소 주식회사
-  url: //alook.so
+  url: //twitter.com/alookso
 year: 2024
 scope:
   en: UX redesign
   ko: UX 개편
 description:
-  en: <p>Since <a href="https://alook.so" target="_blank" rel="noreferrer">alook.so</a> was launched, various features and pages have been added, changed, or deleted over a period of time. However, design debt has accumulated over time as these updates have not always been integrated organically with each other. Despite the consensus within the team regarding the need for improvement, it had not been prioritised due to resource issues until the design system project began, which opened up the opportunity for a UX revamp.</p><p>Having reevaluated the overall structure of the entire system and taking the user feedback with data collected into account, following points were prioritised for redesign. (Due to business circumstances, these were not implemented in the service.)</p>
-  ko: <p><a href="https://alook.so" target="_blank" rel="noreferrer">alook.so</a> 서비스가 오픈된 이후로 장기간에 걸쳐 여러 기능과 페이지가 새롭게 추가되거나 변경, 삭제되어 왔으나 각 업데이트가 서로 유기적으로 이어지지 못한 탓에 시간의 흐름과 함께 디자인 부채가 쌓여왔습니다. 개선 필요성에 대한 조직 내 공감대는 형성돼 있었지만 리소스 문제로 우선 순위에서 밀려 오다가 <a href="../alookso-design-system">디자인 시스템 기반 작업</a>이 시작되면서 UX 개편도 함께 진행할 기회를 얻게 되었습니다.</p><p>서비스 전반의 구조를 다시 파악하고 그간 쌓여온 사용자 피드백과 데이터를 참고해 우선적으로 수정이 필요한 부분들을 선정해 각각에 대한 개선안을 제시하였습니다. (이후 발생한 사업상의 사정으로 서비스 내 실제 적용은 이루어지지 않았습니다.)</p>
+  en: <p>Since alook.so was launched, various features and pages have been added, changed, or deleted over a period of time. However, design debt has accumulated over time as these updates have not always been integrated organically with each other. Despite the consensus within the team regarding the need for improvement, it had not been prioritised due to resource issues until the design system project began, which opened up the opportunity for a UX revamp.</p><p>Having reevaluated the overall structure of the entire system and taking the user feedback with data collected into account, following points were prioritised for redesign. (Due to business circumstances, these were not implemented in the service.)</p>
+  ko: <p>alook.so 서비스가 오픈된 이후로 장기간에 걸쳐 여러 기능과 페이지가 새롭게 추가되거나 변경, 삭제되어 왔으나 각 업데이트가 서로 유기적으로 이어지지 못한 탓에 시간의 흐름과 함께 디자인 부채가 쌓여왔습니다. 개선 필요성에 대한 조직 내 공감대는 형성돼 있었지만 리소스 문제로 우선 순위에서 밀려 오다가 <a href="../alookso-design-system">디자인 시스템 기반 작업</a>이 시작되면서 UX 개편도 함께 진행할 기회를 얻게 되었습니다.</p><p>서비스 전반의 구조를 다시 파악하고 그간 쌓여온 사용자 피드백과 데이터를 참고해 우선적으로 수정이 필요한 부분들을 선정해 각각에 대한 개선안을 제시하였습니다. (이후 발생한 사업상의 사정으로 서비스 내 실제 적용은 이루어지지 않았습니다.)</p>

@@ -1,7 +1,16 @@
 - company:
+    en: Ordinary Magic
+    ko: 올디너리매직
+  url: //peekaby.com
+  title:
+    en: UX/UI Designer
+    ko: UX/UI 디자이너
+  year: 2025-
+
+- company:
     en: alookso Corp.
     ko: 얼룩소
-  url: //alook.so
+  url: //twitter.com/alookso
   title:
     en: Product Manager
     ko: 프로덕트 매니저
